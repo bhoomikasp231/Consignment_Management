@@ -1,0 +1,343 @@
+nav.navbar {
+  width: 100%;
+  height: 6em;
+  filter: brightness(60%);
+  z-index: 1;
+  background:#4B5D67;
+
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0.6rem;
+  
+}
+
+.brand-title {
+  display: flex;
+  flex-direction: row;
+  margin-left: -13%;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: brown;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: rgba(201, 16, 16, 0.5);
+  border-color: rgba(197, 13, 13, 0.1);
+}
+.navbar-toggler-img {
+  height: 150px;
+  width: 90%;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='grey' d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'%3E%3C/path%3E%3C/svg%3E");
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-size: 100% 100%;
+}
+
+ul.links-list {
+  display: flex;
+  flex-direction: row;
+}
+
+li.nav-item {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 253, 253);
+ 
+  font-size: 1.2em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a.is-active {
+  color: rgb(4, 209, 245);
+}
+
+.container {
+  width: 100%;
+  background-image: url("https://img.freepik.com/free-photo/parcel-delivery-man-wear-protective-gloves-blue-protect-hygiene-germs-bacteria-package-through-service-send-home-hand-holding-consign-submission-customer-accepting-box_109549-3437.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  margin-top: -2em;
+  margin-bottom: -2em;
+}
+
+.logo{
+  margin-left: 0.3em;
+  width:50px;
+   height:50px;
+}
+.brand-name{
+  color: white;
+  font-size: 1em;
+  font-weight: lighter;
+
+}
+.logo-layout{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  padding-right:1em;
+  padding-left:1em;
+}
+@media only screen and (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav.navbar {
+    position: relative;
+    width: 100%;
+    height: 5em;
+    z-index: 1;
+    background: gray;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  nav.navbar {
+    background-color: rgb(46, 45, 40);
+  }
+ .search-field{
+   border: none;
+   margin-left: -140px;
+   margin-right: 90px;
+   border-radius: 10px;
+ }
+ .logo-layout{
+
+  width: 2.7em;
+}
+
+ .logo{
+
+  margin-left: 0.3em;
+  width:35px;
+  height:35px;
+}
+
+.brand-name{
+  color: white;
+  font-size: 0.8em;
+  font-weight: lighter;
+
+}
+
+ nav a {
+  text-decoration: none;
+  color: rgb(250, 249, 249);
+  font-size: 0.8em;
+  font-weight: bold;
+}cd 
+ .brand-title{
+  margin-left: -40px;
+ }
+ 
+
+  div.navbar-links {
+    position: fixed;
+    margin-right: 0;
+    overflow: -moz-hidden-unscrollable;
+    width: 50%;
+    background: rgb(53, 52, 52);
+    z-index: 10000;
+    margin-top: 17%;
+    float: right;
+    right: 0;
+    height: 100vh;
+    transition: all ease-in-out 0.3s;
+    align-self: flex-start;
+    border-top: 2px solid rgb(185, 169, 20);
+
+   
+
+  }
+
+  ul.links-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .navbar-links.menu-collapse {
+    margin-right: -75%;
+    width: 0;
+    overflow: hidden;
+    z-index: 10000;
+  }
+
+  li.nav-item {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    z-index: 1000;
+  }
+
+  li.nav-item a.nav-link {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+  .menu-collapse {
+    margin-right: -75%;
+    z-index: 1000;
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+/*HomePage*/
+.out-container {
+
+  height: auto;
+}
+
+.mb_tp {
+  margin-top: 50px;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+  overflow: hidden;
+}
+.item.active img {
+  transition: transform 5000ms linear 0s;
+  transform: scale(1.2, 1.2);
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1000;
+  position:absolute;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 1000;
+  position: absolute;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .each-slide > div {
+    height: 250px;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: rgb(133, 130, 130);
+  font-weight: bold;
+  color: aliceblue;
+  padding: 5px;
+}
+
+.style-line {
+  margin-left: 10px;
+  border-right: 8px solid rgb(250, 250, 248);
+  border-top: 40px solid rgb(53, 52, 52);
+  border-bottom: 40px solid rgb(53, 52, 52);
+  transform: translateX(-25%) rotate(0deg);
+  background-color: white;
+}
+
+
+input[type=text] {
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 13px;
+  border: 1px solid rgb(138, 137, 137);
+  background-color: white;
+
+}
+
+input[type=password] {
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 13px;
+  border: 1px solid rgb(138, 137, 137);
+  background-color: white;
+}
+
+
+
+.search-bar-layout{
+ width: 40em;
+ margin: 0%;
+ display: flex;
+ flex-direction: row;
+}
+.search-btn{
+  margin-left: -1.7em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.search-btn:hover{
+  filter: brightness(80%);
+}
+
+
+

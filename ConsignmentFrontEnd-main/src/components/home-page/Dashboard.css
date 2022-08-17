@@ -1,0 +1,102 @@
+
+
+.each-slide > div { 
+  margin: 2em;
+  border-radius: 1em;
+  box-shadow: 3px 3px 5px;
+  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 50em;
+  }
+
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: transparent;
+    text-align: center;
+  }
+  .slide-container{
+  
+    width: 100%;
+    margin-top: 1.3em;
+    background: white;
+   height:max-content;
+   z-index: 1;
+   position: relative;
+    background: white;
+  
+  }
+
+  .hm-second-main{
+    padding: 1em;
+    margin-top: -1em;
+    background-color: white;
+    margin-bottom: -2em;
+  }
+  .flex-row{
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+  }
+.detail-text{
+  margin: 2em;
+  margin-top: 5em;
+  font-size: 1.2em;
+  font-family: 'Roboto Slab', serif;
+
+}
+.detail-text-val{
+  font-family: 'Roboto Slab', serif;
+}
+  
+.value-card{
+  border: 1px solid white;
+  box-shadow: 3px 3px 8px;
+  padding: 1em;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  margin-bottom: 0em;
+  border-radius: 2em;
+}
+.font-style{
+  font-family: 'Abel', sans-serif;
+}
+
+ 
+  
+
+
+  @media only screen and (max-width: 992px) {
+    .each-slide > div {
+        height: 15em;
+      }
+   
+   .slide-container{
+    width: 100%;
+    margin-top: 1.3em;
+    background: white;
+   height:max-content;
+   z-index: 1;
+   position: relative;
+  }
+  .flex-row{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-text{
+    margin: 1em;
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  }
+
+  
+
+ 

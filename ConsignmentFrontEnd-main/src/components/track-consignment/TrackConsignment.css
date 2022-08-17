@@ -1,0 +1,43 @@
+.hr-border{
+
+     background-color: #413e3e;
+  width: 1em;
+  float: center;
+  height: 1px;
+  align-content: space-between;
+  margin-top: 2em;
+}
+
+.track-main{
+    color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    width: 40em;
+    padding: 0.2em;
+    border: 0.5em solid rgb(1, 104, 82);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+}
+
+@media only screen and (max-width: 990px) {
+    .hr-border{
+        background-color: #6d3f3f;
+     width: 1em;
+     float: center;
+     height: 1px;
+     align-content: space-between;
+     margin-top: 2em;
+   }
+
+   .track-main{
+    color: darkgreen;
+    display: flex;
+    border: none;
+    flex-direction: row;
+    width: 18em;
+    font-weight: bold;
+    text-align: center;
+}
+    
+}

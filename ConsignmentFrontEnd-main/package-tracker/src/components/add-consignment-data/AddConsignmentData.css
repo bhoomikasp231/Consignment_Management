@@ -1,0 +1,264 @@
+.assstock-container{
+    margin-top: 20px;
+ }
+ 
+ .meta-data-container{
+   margin-left: 1em;
+   margin-right: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px 10px 10px 10px;
+  background: rgba(253, 253, 253, 0.849);
+  box-shadow: 5px 5px 8px #131312; 
+ }
+ .add-stock-container{
+     width: 100%;
+ }
+ 
+ div {
+     margin-bottom: 10px;
+ }
+ 
+ label{
+     text-align: right;
+     width: 156px;
+     font-size: 12px;
+     color: #777777;
+     margin-right: 10px;
+     /* text-shadow: 3px 3px 8px; */
+ }
+ 
+ input{
+     width: 50%;
+     border-radius: 8px;
+     padding: 5px 10px;
+     border: 2px solid #e4e1e1;
+     /* box-shadow: 2px 2px 6px; */   
+ }
+ 
+ input:focus {
+     outline: none !important; 
+     
+ }
+ textarea{
+     border-radius: 10px;
+     padding: 10px;
+     /* box-shadow: 3px 3px 8px; */
+     border: 2px solid #e4e1e1;
+ }
+ textarea:focus{
+     outline: none;
+ }
+ 
+  .heading-title{
+     font-size: 33px;
+     font-weight:normal;
+     color: rgb(51, 43, 0);
+     /* text-shadow: 10px 8px 5px; */
+ }
+ .custom-btn-addstock{
+     background-color: #007259;
+     /* box-shadow: 5px 5px 10px #473a01; */
+     color: white;
+     width: 25%;
+     border-radius: 30px;
+     border: none;
+     font-size: 12px;
+     padding: 5px;
+     box-shadow: 2px 2px 3px #161615;
+ }
+ 
+ .custom-btn-addstock:hover{
+     background-color: #063a2f;
+     box-shadow: 2px 2px 5px #161615;
+ }
+ 
+ .customDatePickerWidth, 
+ .customDatePickerWidth > div.react-datepicker-wrapper, 
+ .customDatePickerWidth > div > div.react-datepicker__input-container
+ .customDatePickerWidth > div > div.react-datepicker__input-container input {
+    width: 100%;
+ }
+ 
+ /*new UI */
+ 
+ .addstock-container{
+     width: 100%;
+     padding: 10px;
+     background-color: white;
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ fieldset.scheduler-border {
+     border: 1px groove #ddd !important;
+     padding: 0 1.4em 1.4em 1.4em !important;
+     margin: 0 0 1.5em 0 !important;
+     -webkit-box-shadow:  0px 0px 0px 0px #000;
+             box-shadow:  0px 0px 0px 0px #000;
+             box-shadow: 1px 1px 2px;
+ }
+ 
+ legend.scheduler-border {
+     font-size: 1.2em !important;
+     font-weight: bold !important;
+     text-align: left !important;
+     margin-top: -16px;
+     width: 15%;
+     text-align: center;
+     background-color: white;
+    
+ 
+ }
+ 
+ .heading-title{
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(0, 90, 78, 0.562);
+    font-size: 35px;
+    font-weight: bold;
+    }
+
+
+    /* Progress bar Animation */
+
+    
+.spanner{
+  position:absolute;
+  height: 100%;
+  left: 0;
+  background: #2a2a2a55;
+  width: 100%;
+  display:block;
+  font-weight: bold;
+  font-size: 20px;
+  text-align:center;
+  color: #FFF;
+  transform: translateY(-80%);
+  z-index: 1000;
+  visibility: hidden;
+}
+
+.overlay{
+  position: fixed;
+	width: 100%;
+	height: 100%;
+  background: rgba(0,0,0,0.5);
+  visibility: hidden;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+.show{
+  visibility: visible;
+}
+
+.spanner, .overlay{
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.spanner.show, .overlay.show {
+	opacity: 1
+}
+.addstock-main-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.addstock-second-container{
+  width: 70%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ .unit-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+@media only screen and (max-width: 990px) {
+    .addstock-main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .addstock-second-container{
+        width: 100%;
+
+    }
+    textarea{
+      width: 50%;
+  }
+
+  .unit-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+

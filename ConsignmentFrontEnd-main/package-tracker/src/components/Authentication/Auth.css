@@ -1,0 +1,36 @@
+/*****/
+.textOnInput {
+    position: relative;
+    margin-bottom: 30px;
+  
+  }
+  .textOnInput label {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    padding: 2px;
+   
+  }
+  input:focus {
+    outline: none !important; 
+    
+}
+  
+  label {
+  
+    width: 30%;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: right;
+    display: inline-block;
+    margin-bottom: .5rem;
+    background-color: white;
+  }
+  .form-control {
+    box-shadow: none !important;
+    height: 45px;
+    width: 100%;
+  }
+
+  
+

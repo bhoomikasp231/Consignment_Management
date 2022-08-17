@@ -1,0 +1,53 @@
+.bacg-imge{
+    text-align: center;
+    margin-top: 2em;
+    
+}
+.btn-layout{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  
+  .btn-view{
+    cursor: pointer;
+    font-size: 1em;
+    width: 16%;
+    margin: 2em;
+    height: 10em;
+    font-size: 1.5em;
+    background-color: #00838F;
+    font-weight: bolder;
+    border: 0.2em solid rgb(6, 85, 105);
+    border-radius: 30em;
+    box-shadow: 3px 3px 7px;
+    align-content: center;
+  }
+  .btn-view:hover{
+    font-weight: bold;
+    background-color: #00ACC1;
+    border: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 10px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .bacg-imge{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+  .btn-view{
+    cursor: pointer;
+    font-size: 1em;
+    width: 80%;
+    margin: 1em;
+    height: 3em;
+   
+  }
+
+  }
